@@ -1,0 +1,8 @@
+<div *ngIf="post" class="main-container">
+    <h1 *ngIf="post">{{post.title}}</h1>
+    <div class="date">{{post.date | date:'MMM d, y'}}</div>
+    <div [innerHtml]="post.text" id="JSON-container"></div>
+</div>
+
+
+<!-- json-server --watch server/blog.json -->
