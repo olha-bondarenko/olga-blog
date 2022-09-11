@@ -25,8 +25,8 @@ app.use(cors({
 app.use("/api/posts", postRouter);
 app.use(express.static('public'));
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'built', 'public', 'index.html'));
+app.get('*', (req: any, res: any) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 })
 
 const port = process.env.PORT || 5000;

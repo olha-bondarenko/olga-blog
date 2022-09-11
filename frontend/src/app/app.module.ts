@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NzIconModule } from 'ng-zorro-antd/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './containers/home/home.component';
@@ -19,9 +19,10 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
-import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzGridModule } from 'ng-zorro-antd/grid';
+import { IconDefinition } from '@ant-design/icons-angular';
+import { MenuOutline } from '@ant-design/icons-angular/icons';
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
@@ -30,6 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BasicButtonComponent } from './components/basic-button/basic-button.component';
 import { TitleComponent } from './components/title/title.component';
 import { BlogPostComponent } from './containers/blog-post/blog-post.component';
+
+const icons: IconDefinition[] = [ MenuOutline ];
 
 registerLocaleData(en);
 
@@ -57,21 +60,20 @@ registerLocaleData(en);
     NzLayoutModule,
     NzBreadCrumbModule,
     NzMenuModule,
-    NzIconModule,
     NzCardModule,
     NzGridModule,
     NzCarouselModule,
     NzDropDownModule,
     NzCollapseModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NzIconModule.forRoot(icons)
   ],
   exports: [
     NzButtonModule,
     NzLayoutModule,
     NzBreadCrumbModule,
     NzMenuModule,
-    NzIconModule,
     NzCardModule,
     NzGridModule,
     NzDropDownModule,
