@@ -1,19 +1,19 @@
 <div nz-row nzJustify='center' class="container">
-    <div nz-row nzJustify='center' class="tags-container">
-        <a *ngFor="let tag of tags" routerLink="/tag/{{tag.key}}">
-            {{tag.value}}
-        </a>
-    </div>
-    <ng-container *ngIf="(posts$ | async) as posts">
-        <div nz-row *ngFor="let post of posts" class="card" (click)="getPost(post)">
-          <div class="blog-img">
-            <img src="{{post.imageUrl}}" alt="{{post.imageDescription}}">
-          </div>
-            <div class="card-body">
-                <h3 class="card-title">{{post.title}}</h3>
-              <p class="card-text">{{post.description}}</p>
-              <p class="card-text"><small class="text-muted">Created {{post.createdAt | date:'MMM d, y'}}</small></p>
-            </div>
-          </div>
-    </ng-container>
+  <div nz-row nzJustify='center' class="tags-container">
+    <a *ngFor="let tag of tags" routerLink="/tag/{{tag.key}}">
+      {{tag.value}}
+    </a>
   </div>
+  <ng-container *ngIf="(posts$ | async) as posts">
+    <div nz-row *ngFor="let post of posts" class="card" (click)="getPost(post)">
+      <div class="blog-img">
+        <img src="{{post.imageUrl}}" alt="{{post.imageDescription}}">
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">{{post.title}}</h3>
+        <p class="card-text">{{post.description}}</p>
+        <p class="card-text"><small class="text-muted">Created {{post.createdAt | date:'MMM d, y'}}</small></p>
+      </div>
+    </div>
+  </ng-container>
+</div>

@@ -7,6 +7,7 @@ import { Post } from '../models/post';
 @Injectable({
   providedIn: 'root'
 })
+
 export class PostsService {
   POSTS_URL = environment.production ? '' : 'http://localhost:5000';
 

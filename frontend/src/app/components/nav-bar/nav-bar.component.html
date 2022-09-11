@@ -1,20 +1,19 @@
-
-    <div nz-row nzJustify="center" nzAlign="middle" class="nav-lg">
-        <ul nz-menu nzMode="horizontal">
-            <li *ngFor="let item of navBarItems" nz-menu-item nzSelected="{{item.selected}}">
+<div nz-row nzJustify="center" nzAlign="middle" class="nav-lg">
+     <ul nz-menu nzMode="horizontal">
+        <li *ngFor="let item of navBarItems" nz-menu-item nzSelected="{{item.selected}}">
+            <a routerLink="/{{item.path}}" routerLinkActive="active">{{item.title}}</a>
+        </li>
+    </ul>
+</div>
+<div nz-row nzJustify="end" class="nav-sm">
+    <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+        <span class="menu-icon" nz-icon nzType="menu" nzTheme="outline"></span>
+    </a>
+    <nz-dropdown-menu #menu="nzDropdownMenu">
+        <ul nz-menu>
+            <li class="nav-sm-list-item" *ngFor="let item of navBarItems" nz-menu-item nzSelected="{{item.selected}}">
                 <a routerLink="/{{item.path}}" routerLinkActive="active">{{item.title}}</a>
             </li>
         </ul>
-    </div>
-    <div nz-row nzJustify="end" class="nav-sm">
-        <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
-            <span class="menu-icon" nz-icon nzType="menu" nzTheme="outline"></span>
-          </a>
-          <nz-dropdown-menu #menu="nzDropdownMenu">
-            <ul nz-menu>
-                <li class="nav-sm-list-item" *ngFor="let item of navBarItems" nz-menu-item nzSelected="{{item.selected}}">
-                    <a routerLink="/{{item.path}}" routerLinkActive="active">{{item.title}}</a>
-                </li>
-            </ul>
-          </nz-dropdown-menu>
-    </div>
+    </nz-dropdown-menu>
+</div>
