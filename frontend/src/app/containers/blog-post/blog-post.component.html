@@ -1,0 +1,6 @@
+<div *ngIf="post" class="container">
+    <img src="{{post.imageUrl}}" alt="">
+    <h1 *ngIf="post">{{post.title}}</h1>
+    <div class="date">{{post.createdAt | date:'MMM d, y'}}</div>
+    <div [innerHtml]="post.text" id="JSON-container"></div>
+</div>

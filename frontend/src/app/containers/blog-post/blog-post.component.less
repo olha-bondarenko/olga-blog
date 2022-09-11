@@ -1,0 +1,57 @@
+.container {
+    max-width: 40rem;
+    .date {
+        color: #666;
+        margin-bottom: 20px;
+    }
+    h1 {
+        margin-bottom: 0;
+        color: #06b850;
+    }
+    img {
+        width: 40rem;
+        object-fit: cover;
+        margin-bottom: 3rem;
+    }
+
+    ::ng-deep #JSON-container div.code {
+        background-color: #6af4a4;
+        padding: 20px 20px 5px 30px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        span{
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            .side-space {
+                margin-left: 30px;
+            }
+            .double-side-space {
+                margin-left: 60px;
+            }
+        }
+        p {
+            color: #4e544f;
+            .side-space {
+                margin-left: 30px;
+            }
+        }
+        
+    }
+    ::ng-deep #JSON-container div.article {
+        h3 {
+            color: #06b850;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .container, img {
+        max-width: 28rem;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    img {
+        max-width: 20rem;
+    }
+}

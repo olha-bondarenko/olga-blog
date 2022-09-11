@@ -12,7 +12,7 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
     this.navBarItems = [
       {title: 'Home', path: 'home', selected: false},
-      {title: 'About me', path: 'about', selected: false},
+      {title: 'Experience', path: 'about', selected: false},
       {title: 'Portfolio', path: 'portfolio', selected: false},
       {title: 'Blog', path: 'blog', selected: false},
       {title: 'Contact', path: 'contact', selected: false},

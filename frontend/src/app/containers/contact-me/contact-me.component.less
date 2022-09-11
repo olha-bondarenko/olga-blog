@@ -1,0 +1,37 @@
+.container {
+    margin-top: 5rem;
+    ul {
+        width: 30rem;
+        list-style: none;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+  
+.key-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.value-column {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+@media screen and (min-width: 400px) and (max-width: 801px) {
+    .container {
+        ul {
+            width: 20rem;
+            padding-left: 1rem;
+        }
+    }
+}

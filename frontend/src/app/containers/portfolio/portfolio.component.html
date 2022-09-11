@@ -1,1 +1,75 @@
-<p>portfolio works!</p>
+<div class="container">
+    <div class="portfoliio-post">
+        <app-title [title]="'Oh my food!'" [description]="'Oh my food! is an app for ordering the food. User can go through the registration process, add items in the basket, create an order and pay for it with Paypal.'"></app-title>
+        <div class="live-redirect" >
+            <a href="https://ohh-my-food.herokuapp.com/" target="_blank">Live</a>
+            <a href="https://github.com/olha-bondarenko/oh-my-food" target="_blank">GitHub</a>
+        </div>
+        <nz-carousel nzAutoPlay="2000" [nzEffect]="'fade'" [nzDotPosition]="'bottom'">
+                    <div nz-carousel-content *ngFor="let image of omfImageArray">
+                        <img src="{{image}}" alt="">
+                    </div>
+        </nz-carousel>
+        <div class="tech-list">
+            <span>
+                While creating this app were used next technologies and packages:
+            </span>
+            <ul>
+                <li>Angular 14</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Karma</li>
+                <li>Paypal</li>
+                <li>Leaflet</li>
+            </ul>
+        </div>
+    </div>
+    <div class="portfoliio-post">
+        <app-title [title]="'Netri'" [description]="'Netri is an app for sharing beautiful hidden spots of Ukrainian nature.'"></app-title>
+        <div class="live-redirect" >
+            <a href="https://netri-ua.herokuapp.com/" target="_blank">Live</a>
+            <a href="https://github.com/olha-bondarenko/netri" target="_blank">GitHub</a>
+        </div>
+        <nz-carousel nzAutoPlay="2000" [nzEffect]="'fade'" [nzDotPosition]="'bottom'">
+                    <div nz-carousel-content *ngFor="let image of netriImageArray">
+                        <img src="{{image}}" alt="">
+                    </div>
+        </nz-carousel>
+        <div class="tech-list">
+            <span>
+                While creating this app were used next technologies:
+            </span>
+            <ul>
+                <li>React v18</li>
+                <li>Redux</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Material UI</li>
+            </ul>
+        </div>
+    </div>
+    <div class="portfoliio-post">
+        <app-title [title]="'GPT-3'" [description]="'GPT-3 is a landing page, which was created with custom CSS from Figma mock-up'"></app-title>
+        <div class="live-redirect" >
+            <a href="https://olha-bondarenko.github.io/gpt3/" target="_blank">Live</a>
+            <a href="https://github.com/olha-bondarenko/gpt3" target="_blank">GitHub</a>
+        </div>
+        <nz-carousel nzAutoPlay="2000" [nzEffect]="'fade'" [nzDotPosition]="'bottom'">
+                    <div nz-carousel-content *ngFor="let image of gpt3ImageArray">
+                        <img src="{{image}}" alt="">
+                    </div>
+        </nz-carousel>
+        <div class="tech-list">
+            <span>
+                While creating this app were used next technologies:
+            </span>
+            <ul>
+                <li>React v18</li>
+                <li>Aos</li>
+                <li>Custom CSS</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+    </div>
+</div>
+

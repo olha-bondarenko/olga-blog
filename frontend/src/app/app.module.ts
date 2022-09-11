@@ -23,10 +23,13 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
+import { NzCarouselModule } from 'ng-zorro-antd/carousel';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BasicButtonComponent } from './components/basic-button/basic-button.component';
 import { TitleComponent } from './components/title/title.component';
+import { BlogPostComponent } from './containers/blog-post/blog-post.component';
 
 registerLocaleData(en);
 
@@ -41,7 +44,8 @@ registerLocaleData(en);
     LayoutComponent,
     NavBarComponent,
     BasicButtonComponent,
-    TitleComponent
+    TitleComponent,
+    BlogPostComponent
   ],
   imports: [
     BrowserModule,
@@ -56,6 +60,8 @@ registerLocaleData(en);
     NzIconModule,
     NzCardModule,
     NzGridModule,
+    NzCarouselModule,
+    NzDropDownModule,
     NzCollapseModule,
     HttpClientModule,
     BrowserAnimationsModule
@@ -68,6 +74,8 @@ registerLocaleData(en);
     NzIconModule,
     NzCardModule,
     NzGridModule,
+    NzDropDownModule,
+    NzCarouselModule,
     NzCollapseModule,
     HttpClientModule,
     BrowserAnimationsModule
