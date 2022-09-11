@@ -2,7 +2,7 @@
     "name": "olga-blog",
     "version": "1.0.0",
     "engines" : { 
-        "node" : ">=16.0.0"
+        "node" : "16.15.0"
     },
     "scripts": {
         "start": "cd backend/built && node src/server.js",
