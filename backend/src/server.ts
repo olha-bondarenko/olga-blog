@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
-const cors = require('cors');
+import cors from "cors";
 import path from 'path';
 import express from "express";
 import { dbConnect } from './configs/database.config';
