@@ -5,7 +5,7 @@ This project was created as a personal blog of Olga Bondarenko to demonstrate he
 
 ## Development server
 
-Run `ng serve` in the frontend directory to run client side and `npm start` in the backend directory to start a dev server. Navigate to `http://localhost:4200/` for cleind part and `http://localhost:5000/` for server. The application will automatically reload if you change any of the source files. The live version of the app can be found at `https://b-olga.herokuapp.com`.
+Run `ng serve` in the frontend directory to run client side and `npm start` in the backend directory to start a dev server. Navigate to `http://localhost:4200/` for cleind part and `http://localhost:5000/` for server. The application will automatically reload if you change any of the source files. The live version of the app can be found [here](https://b-olga.herokuapp.com).
 
 ## Build
 
