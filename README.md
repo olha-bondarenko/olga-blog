@@ -1,4 +1,4 @@
-# OlgaBlog
+# Olga's Blog
 
 This project was created as a personal blog of Olga Bondarenko to demonstrate her coding skills and to introduce her to the potential employer. The app was created using Angular v13 and Node.js v16. For the styling Ng-zorro library was used and projecy is mobile responsive. 
 
