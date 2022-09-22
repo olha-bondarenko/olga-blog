@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'tag/:tag', component: BlogComponent },
   { path: 'blog/:id', component: BlogPostComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'contact', component: ContactMeComponent },
